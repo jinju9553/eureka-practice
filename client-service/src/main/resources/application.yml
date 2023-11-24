@@ -1,0 +1,17 @@
+server:
+  port: 0 #랜덤 포트 등록
+  
+spring:
+  application:
+    name: client-service #서버에 등록할 이름
+    
+# eureka 서비스를 등록할 경로 명시
+
+#서버를 이용할 지역(Region) - 그 아래의 Zone (동시에 배치됨) 설정
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka #eureka라고 쓰는 것이 관례. 해당 위치에 이 서비스를 등록한다.
+      

@@ -1,0 +1,11 @@
+server:
+  port: 8761
+  
+spring:
+  application:
+    name: discovery-server #보통은 discovery-service라고 표기
+    
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false

@@ -1,0 +1,12 @@
+server:
+  port: 0 #랜덤 포트 등록
+  
+spring:
+  application:
+    name: client-service #서버에 등록할 이름
+    
+# eureka 서비스를 등록할 경로 명시
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
