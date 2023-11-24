@@ -1,3 +1,0 @@
-
-server:
-  port: 8000 #Vue 측에서 axios로 요청하는 공개 포트
